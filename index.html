@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web APIs Challenge: Code Quiz</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="code_quiz">
+        <div class="box_header">
+            <a href="#" class="score_list" type="button">View High Scores</a>
+            <div class="timeScore">Time: <span class="clock">100</span></div>
+        </div>
+        <div class="content">
+            <div class="start">
+                <h2 class="cards_header">Coding Quiz Challenge</h2>
+                <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect
+                    answers will penalize your score/time by 25 seconds!</p>
+                <button class="btns start_btn">Start Quiz</button>
+            </div>
+            <div class="question question1">
+                <h2 class="cards_header">Commonly used data types do NOT Include:</h2>
+                <button id="quiz1_btn1" class="btns quiz1_btns">1. Strings</button>
+                <br>
+                <button id="quiz1_btn2" class="btns quiz1_btns">2. Booleans</button>
+                <br>
+                <button id="quiz1_btn3" class="btns quiz1_btns">3. Alerts</button>
+                <br>
+                <button id="quiz1_btn4" class="btns quiz1_btns">4. Numbers</button>
+            </div>
+            <div class="question question2">
+                <h2 class="cards_header">Arrays in JavaScript can be used to store _____.</h2>
+                <button id="quiz2_btn1" class="btns quiz2_btn1">1. Numbers and Strings</button>
+                <br>
+                <button id="quiz2_btn2" class="btns quiz2_btn2">2. Other Arrays</button>
+                <br>
+                <button id="quiz2_btn3" class="btns quiz2_btn3">3. Booleans</button>
+                <br>
+                <button id="quiz2_btn4" class="btns quiz2_btn4">4. All of the Above</button>
+            </div>
+            <div class="question question3">
+                <h2 class="cards_header">A very useful tool used during development and debugging for printing content
+                    to the debugger is:</h2>
+                <button id="quiz3_btn1" class="btns quiz3_btn1">1. JavaScript</button>
+                <br>
+                <button id="quiz3_btn2" class="btns quiz3_btn2">2. Terminal/Bash</button>
+                <br>
+                <button id="quiz3_btn3" class="btns quiz3_btn3">3. for Loops</button>
+                <br>
+                <button id="quiz3_btn4" class="btns quiz3_btn4">4. console.log</button>
+            </div>
+            <div class="question question4">
+                <h2 class="cards_header">String values must be enclosed within ____ when being assigned to variables.
+                </h2>
+                <button id="quiz4_btn1" class="btns quiz4_btn1">1. Commas</button>
+                <br>
+                <button id="quiz4_btn2" class="btns quiz4_btn2">2. Curly Brackets</button>
+                <br>
+                <button id="quiz4_btn3" class="btns quiz4_btn3">3. Quotes</button>
+                <br>
+                <button id="quiz4_btn4" class="btns quiz4_btn4">4. Parenthesis</button>
+            </div>
+            <div class="end">
+                <h2>All done!</h2>
+                <p>Your final score is '<span class="finalScore"></span>'.</p>
+                <label for="input">Enter Initials:</label>
+                <input type="text" id="initials">
+                <button class="end_button" disabled>Submit</button>
+            </div>
+            <div id="score_page">
+                <h2 class="cards_header">High Scores</h2>
+                <ul class="highScoresList"></ul>
+                <button class="btns goBack_btn">GO BACK</button>
+                <button class="btns clearList_btn">Clear High Scores</button>
+            </div>
+            <ul class="marks">
+                <li class="correct">
+                    Correct!
+                </li>
+                <li class="wrong">
+                    Wrong!
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>

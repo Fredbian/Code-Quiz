@@ -1,0 +1,172 @@
+/* reset default setting of page */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* set font family for the page */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* reset style for ul */
+ul {
+    list-style: none;
+}
+
+
+/* set style for the whole quiz box */
+.code_quiz {
+        height: 600px;
+        width: 90%;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 5px;
+        border-width: 1px;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+        color: hsl(206, 17%, 28%);
+        margin: 100px auto;
+        max-width: 800px;
+        padding: 30px 40px;
+}
+
+/* this is the header that contents score-list and timer inside the box */
+/* set style for box header */
+.box_header {
+    /* display: flex;
+    justify-content: space-between; */
+    position: relative;
+}
+
+/* set style for the score list */
+.score_list {
+    height: 30px;
+    width: 150px;
+    text-align: center;
+    line-height: 30px;
+    color: purple;
+    font-weight: 700;
+    text-decoration: none;
+    position: absolute;
+    left: 0;
+}
+
+/* set style for the timer */
+.timeScore {
+    width: 150px;
+    height: 30px;
+    color: purple;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 700;
+    position: absolute;
+    right: 0;
+}
+
+/* this is the content area */
+.content {
+    position: relative;
+    word-wrap: normal;
+    width: 98%;
+    height: 400px;
+    margin-top: 80px;
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+/* set style for all buttons */
+button {
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkslateblue;
+    color: azure;
+}
+
+/* set style for high score list */
+.highScoresList {
+    margin: 10px;
+}
+
+
+.btns {
+    width: 250px;
+}
+
+.question {
+    margin: 20px;
+    /* display: none; */
+    /* background-color: aquamarine; */
+}
+
+
+/* set style for 'start', 'end' and 'score' pages */
+.start,.end,#score_page {
+    text-align: center;
+}
+
+.start p {
+    margin:5px;
+    padding: 5px;    
+}
+
+/* set style for marks part */
+.marks {
+    margin: 0 20px;
+    font-size: 25px;
+}
+
+.correct {
+    border-top: 2px solid gray;
+    display: none;
+}
+
+.wrong {
+    border-top: 2px solid gray;
+    display: none;
+}
+
+/* set style for all cards */
+
+.cards_header {
+    padding: 5px;
+}
+
+/* this area only for testing display */
+.start {
+    margin-top: 200px;
+}
+
+.end {
+    margin-top: 200px;
+    display: none;
+}
+
+.question1 {
+    margin-top: 100px;
+    display: none;
+}
+
+.question2 {
+    margin-top: 100px;
+    display: none;
+}
+
+.question3 {
+    margin-top: 100px;
+    display: none;
+}
+
+.question4 {
+    margin-top: 100px;
+    display: none;
+}
+
+#score_page {
+    margin-top: 150px;
+    display: none;
+}
