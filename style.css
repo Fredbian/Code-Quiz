@@ -82,11 +82,6 @@ button {
     cursor: pointer;
 }
 
-button:hover {
-    background-color: darkslateblue;
-    color: azure;
-}
-
 /* set style for high score list */
 .highScoresList {
     margin: 10px;
@@ -99,10 +94,7 @@ button:hover {
 
 .question {
     margin: 20px;
-    /* display: none; */
-    /* background-color: aquamarine; */
 }
-
 
 /* set style for 'start', 'end' and 'score' pages */
 .start,.end,#score_page {
@@ -136,7 +128,7 @@ button:hover {
     padding: 5px;
 }
 
-/* this area only for testing display */
+/* this area for setting display */
 .start {
     margin-top: 200px;
 }

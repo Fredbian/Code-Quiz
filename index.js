@@ -10,8 +10,6 @@
 // WHEN the game is over
 // THEN I can save my initials and score
 
-
-
 // get elements
 let start_btn = document.querySelector('.start_btn')
 let clock = document.querySelector('.clock')
@@ -52,11 +50,7 @@ let goBack_btn = document.querySelector('.goBack_btn')
 let clearList_btn = document.querySelector('.clearList_btn')
 let highScoresList = document.querySelector('.highScoresList')
 let i = 0
-
-
-
-
-
+let btns = document.querySelectorAll('button')
 
 // After click the start btn, the timer will start and show first question card, when time is up, jump to 'end' card
 start_btn.addEventListener('click', function () {
@@ -84,27 +78,15 @@ start_btn.addEventListener('click', function () {
 /* this is Question1, when click buttom '1,2,4', marks will show 'wrong', when click 'button3', will show 'correct', when click 'next', will go to next question */
 // wrong answers q1
 quiz1_btn1.addEventListener('click', function () {
-    wrong.style.display = 'block'
-    clock.innerHTML -= 15
-    i = clock.innerHTML
-    question1.style.display = 'none'
-    question2.style.display = 'block'
+    q1 ()
 })
 
 quiz1_btn2.addEventListener('click', function () {
-    wrong.style.display = 'block'
-    clock.innerHTML -= 15
-    i = clock.innerHTML
-    question1.style.display = 'none'
-    question2.style.display = 'block'
+    q1 ()
 })
 
 quiz1_btn4.addEventListener('click', function () {
-    wrong.style.display = 'block'
-    clock.innerHTML -= 15
-    i = clock.innerHTML
-    question1.style.display = 'none'
-    question2.style.display = 'block'
+    q1 ()
 })
 
 // correct answer q1
@@ -114,34 +96,38 @@ quiz1_btn3.addEventListener('click', function () {
     question2.style.display = 'block'
 })
 
+// this is function for question1
+function q1 () {
+    wrong.style.display = 'block'
+    clock.innerHTML -= 15
+    i = clock.innerHTML
+    question1.style.display = 'none'
+    question2.style.display = 'block'
+}
+
 /* this is Question2, when click buttom '1,2,3', marks will show 'wrong', when click 'button4', will show 'correct', click any button, it will go to next question */
 // wrong answers q2
 quiz2_btn1.addEventListener('click', function () {
-    correct.style.display = 'none'
-    wrong.style.display = 'block'
-    clock.innerHTML -= 15
-    i = clock.innerHTML
-    question2.style.display = 'none'
-    question3.style.display = 'block'
+    q2 ()
 })
 
 quiz2_btn2.addEventListener('click', function () {
-    correct.style.display = 'none'
-    wrong.style.display = 'block'
-    clock.innerHTML -= 15
-    i = clock.innerHTML
-    question2.style.display = 'none'
-    question3.style.display = 'block'
+    q2 ()
 })
 
 quiz2_btn3.addEventListener('click', function () {
+    q2 ()
+})
+
+// this is function for question2
+function q2 () {
     correct.style.display = 'none'
     wrong.style.display = 'block'
     clock.innerHTML -= 15
     i = clock.innerHTML
     question2.style.display = 'none'
     question3.style.display = 'block'
-})
+}
 
 // correct answer q2
 quiz2_btn4.addEventListener('click', function () {
@@ -154,31 +140,26 @@ quiz2_btn4.addEventListener('click', function () {
 /* this is Question3, when click buttom '1,2,3', marks will show 'wrong', when click 'button4', will show 'correct', click any button, it will go to next question */
 // wrong answers q3
 quiz3_btn1.addEventListener('click', function () {
-    correct.style.display = 'none'
-    wrong.style.display = 'block'
-    clock.innerHTML -= 15
-    i = clock.innerHTML
-    question3.style.display = 'none'
-    question4.style.display = 'block'
+    q3 ()
 })
 
 quiz3_btn2.addEventListener('click', function () {
-    correct.style.display = 'none'
-    wrong.style.display = 'block'
-    clock.innerHTML -= 15
-    i = clock.innerHTML
-    question3.style.display = 'none'
-    question4.style.display = 'block'
+    q3 ()
 })
 
 quiz3_btn3.addEventListener('click', function () {
+    q3 ()
+})
+
+// this is function for question3
+function q3 () {
     correct.style.display = 'none'
     wrong.style.display = 'block'
     clock.innerHTML -= 15
     i = clock.innerHTML
     question3.style.display = 'none'
     question4.style.display = 'block'
-})
+}
 
 // correct answer q3
 quiz3_btn4.addEventListener('click', function () {
@@ -191,29 +172,19 @@ quiz3_btn4.addEventListener('click', function () {
 /* this is Question4, when click buttom '1,2,4', marks will show 'wrong', when click 'button3', will show 'correct', click any button, it will go to next question */
 // wrong answers q4
 quiz4_btn1.addEventListener('click', function () {
-    correct.style.display = 'none'
-    wrong.style.display = 'none'
-    clock.innerHTML -= 15
-    i = clock.innerHTML
-    question4.style.display = 'none'
-    end.style.display = 'block'
-    finalScore.innerHTML = i
-    clearInterval(timer)
-
+    q4 ()
 })
 
 quiz4_btn2.addEventListener('click', function () {
-    correct.style.display = 'none'
-    wrong.style.display = 'none'
-    clock.innerHTML -= 15
-    i = clock.innerHTML
-    question4.style.display = 'none'
-    end.style.display = 'block'
-    finalScore.innerHTML = i
-    clearInterval(timer)
+    q4 ()
 })
 
 quiz4_btn4.addEventListener('click', function () {
+    q4 ()
+})
+
+// this is the function for question4
+function q4 () {
     correct.style.display = 'none'
     wrong.style.display = 'none'
     clock.innerHTML -= 15
@@ -222,7 +193,7 @@ quiz4_btn4.addEventListener('click', function () {
     end.style.display = 'block'
     finalScore.innerHTML = i
     clearInterval(timer)
-})
+}
 
 // correct answer q4
 quiz4_btn3.addEventListener('click', function () {
@@ -293,3 +264,18 @@ clearList_btn.addEventListener('click', function () {
     localStorage.clear()
     highScoresList.innerHTML = ''
 })
+
+// set style for button when mouse over it and leave
+for (j = 0; j < btns.length; j++) {
+    btns[j].addEventListener('mouseenter', function () {        
+        this.style.background = 'darkslateblue'
+        this.style.color = 'azure'
+    })
+}
+
+for (j = 0; j < btns.length; j++) {
+    btns[j].addEventListener('mouseleave', function () {        
+        this.style.background = ''
+        this.style.color = ''
+    })
+}
