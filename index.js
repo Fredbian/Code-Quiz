@@ -61,7 +61,7 @@ start_btn.addEventListener('click', function () {
     timer = setInterval(function () {
         i--
         clock.innerHTML = i
-        if (i === 0) {
+        if (i <= 0) {
             clearInterval(timer)
             question1.style.display = 'none'
             question2.style.display = 'none'
@@ -71,6 +71,7 @@ start_btn.addEventListener('click', function () {
             wrong.style.display = 'none'
             score_list.style.display = 'none'
             end.style.display = 'block'
+            finalScore.innerHTML = clock.innerHTML
         }
     }, 1000)
 })
