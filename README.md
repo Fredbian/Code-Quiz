@@ -11,11 +11,13 @@ Web APIs Challenge: Code Quiz
 * The high score board will only keep top 5 high scores.
 
 ## Screenshot:
-* Screenshot1: 
-* Screenshot2:
-* Screenshot1:
-* Screenshot1: 
+* Screenshot1: https://github.com/Fredbian/MONU-FSF-Module4_Challenge/blob/main/image/screenshot1.png 
+* Screenshot2: https://github.com/Fredbian/MONU-FSF-Module4_Challenge/blob/main/image/screenshot2.png
+* Screenshot3: https://github.com/Fredbian/MONU-FSF-Module4_Challenge/blob/main/image/screenshot3.png 
+* Screenshot4: https://github.com/Fredbian/MONU-FSF-Module4_Challenge/blob/main/image/screenshot4.png
+* Screenshot5: https://github.com/Fredbian/MONU-FSF-Module4_Challenge/blob/main/image/screenshot5.png
+* Screenshot6: https://github.com/Fredbian/MONU-FSF-Module4_Challenge/blob/main/image/screenshot6.png
 
 ## URL Links:
-* 
-* 
+* GitHub URL: https://github.com/Fredbian/MONU-FSF-Module4_Challenge 
+* https://fredbian.github.io/MONU-FSF-Module4_Challenge/ 
